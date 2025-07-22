@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="basic_quiz_color">#2196F3</color> <!-- Màu xanh cho câu hỏi của quiz cơ bản -->
+    <color name="intermediate_quiz_color">#FF9800</color> <!-- Màu cam cho quiz trung cấp -->
+    <color name="advanced_quiz_color">#4CAF50</color> <!-- Màu xanh lá cho quiz nâng cao -->
+    <color name="expert_quiz_color">#F44336</color> <!-- Màu đỏ cho quiz chuyên gia -->
+</resources>
