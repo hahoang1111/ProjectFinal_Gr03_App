@@ -25,6 +25,6 @@
         <activity android:name=".QuizListActivity" />
         <activity android:name=".QuizResultActivity" />
         <activity android:name=".QuizHandleActivity" />
-
+        <activity android:name=".dictionary.VocabDetailActivity" />
     </application>
 </manifest>

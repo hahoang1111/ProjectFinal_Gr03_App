@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6F0FA"
+    android:padding="16dp">
+
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:divider="?android:attr/dividerHorizontal"
+android:showDividers="middle"
+android:dividerPadding="8dp">
+
+<!-- TỪ TIẾNG ANH -->
+<TextView
+    android:id="@+id/tvWord"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Abandon"
+    android:textColor="#003366"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginBottom="12dp" />
+
+<!-- KHUNG: PHIÊN ÂM + PHÁT ÂM -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvPhoneticUK"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="/əˈbændən/ (UK)"
+        android:textColor="#333"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/btnPlayUK"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_volume_down_24"
+        android:contentDescription="Play UK"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPhoneticUS"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="/əˈbændən/ (US)"
+        android:textColor="#333"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/btnPlayUS"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_volume_down_24"
+        android:contentDescription="Play US"/>
+</LinearLayout>
+
+<!-- KHUNG: LOẠI TỪ -->
+<TextView
+    android:id="@+id/tvPart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:text="Loại từ: Verb"
+    android:textColor="#0059b3"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp"/>
+
+<!-- KHUNG: NGHĨA -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Từ bỏ điều gì đó hoặc ai đó"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tvMeaning2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Ngừng làm gì đó trước khi hoàn thành"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
+
+<!-- KHUNG: VÍ DỤ -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:text="Ví dụ:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#0059b3"
+        android:layout_marginBottom="4dp"
+        android:layout_height="26dp"
+        android:layout_width="306dp"/>
+
+    <TextView
+        android:id="@+id/tvExample1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• He abandoned his car in the snow."
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tvExample2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• The match was abandoned due to rain."
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>
+
+<!-- KHUNG: TỪ ĐỒNG NGHĨA -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:text="Từ đồng nghĩa:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#0059b3"
+        android:layout_marginBottom="4dp"
+        android:layout_height="26dp"
+        android:layout_width="306dp"/>
+
+    <TextView
+        android:id="@+id/tvSynonyms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forsake, quit, desert, leave"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+</LinearLayout>
+
+<!-- KHUNG: TỪ TRÁI NGHĨA -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:text="Từ trái nghĩa:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#0059b3"
+        android:layout_marginBottom="4dp"
+        android:layout_height="26dp"
+        android:layout_width="306dp"/>
+
+    <TextView
+        android:id="@+id/tvAntonyms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="keep, maintain, stay"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+</LinearLayout>
+
+<!-- KHUNG: GHI CHÚ -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="24dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:text="Ghi chú:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#0059b3"
+        android:layout_marginBottom="4dp"
+        android:layout_height="26dp"
+        android:layout_width="306dp"/>
+
+    <TextView
+        android:id="@+id/tvGrammarNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Lưu ý: 'abandon' là động từ thường đi kèm tân ngữ."
+        android:textSize="14sp"
+        android:textColor="#444"/>
+</LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

@@ -1,43 +1,111 @@
 package com.example.projectfinal_gr03_app.dictionary;
 
-public class Vocabulary_Dic {
-    private String englishWord;
-    private String phonetic;
-    private String partOfSpeech;
-    private String vietnameseMeaning;
-    private String example;
+import java.io.Serializable;
+import java.util.List;
 
-    public Vocabulary_Dic(String englishWord, String phonetic, String partOfSpeech, String vietnameseMeaning, String example) {
+public class Vocabulary_Dic implements Serializable {
+
+    private String englishWord;
+    private String phoneticUK;
+    private String phoneticUS;
+    private String partOfSpeech;
+    private List<String> vietnameseMeanings; // Nhiều nghĩa
+    private List<String> examples;           // Nhiều ví dụ
+    private List<String> synonyms;           // Từ đồng nghĩa
+    private List<String> antonyms;           // Từ trái nghĩa
+    private String grammarNote;              // Ghi chú ngữ pháp (nếu có)
+
+    // Constructors
+    public Vocabulary_Dic(String englishWord,
+                          String phoneticUK,
+                          String phoneticUS,
+                          String partOfSpeech,
+                          List<String> vietnameseMeanings,
+                          List<String> examples,
+                          List<String> synonyms,
+                          List<String> antonyms,
+                          String grammarNote) {
         this.englishWord = englishWord;
-        this.phonetic = phonetic;
+        this.phoneticUK = phoneticUK;
+        this.phoneticUS = phoneticUS;
         this.partOfSpeech = partOfSpeech;
-        this.vietnameseMeaning = vietnameseMeaning;
-        this.example = example;
+        this.vietnameseMeanings = vietnameseMeanings;
+        this.examples = examples;
+        this.synonyms = synonyms;
+        this.antonyms = antonyms;
+        this.grammarNote = grammarNote;
     }
 
-    public String getEnglishWord() { return englishWord; }
-    public String getPhonetic() { return phonetic; }
-    public String getPartOfSpeech() { return partOfSpeech; }
-    public String getVietnameseMeaning() { return vietnameseMeaning; }
-    public String getExample() { return example; }
+    // Getters and setters
+    public String getEnglishWord() {
+        return englishWord;
+    }
 
     public void setEnglishWord(String englishWord) {
         this.englishWord = englishWord;
     }
 
-    public void setPhonetic(String phonetic) {
-        this.phonetic = phonetic;
+    public String getPhoneticUK() {
+        return phoneticUK;
+    }
+
+    public void setPhoneticUK(String phoneticUK) {
+        this.phoneticUK = phoneticUK;
+    }
+
+    public String getPhoneticUS() {
+        return phoneticUS;
+    }
+
+    public void setPhoneticUS(String phoneticUS) {
+        this.phoneticUS = phoneticUS;
+    }
+
+    public String getPartOfSpeech() {
+        return partOfSpeech;
     }
 
     public void setPartOfSpeech(String partOfSpeech) {
         this.partOfSpeech = partOfSpeech;
     }
 
-    public void setVietnameseMeaning(String vietnameseMeaning) {
-        this.vietnameseMeaning = vietnameseMeaning;
+    public List<String> getVietnameseMeanings() {
+        return vietnameseMeanings;
     }
 
-    public void setExample(String example) {
-        this.example = example;
+    public void setVietnameseMeanings(List<String> vietnameseMeanings) {
+        this.vietnameseMeanings = vietnameseMeanings;
+    }
+
+    public List<String> getExamples() {
+        return examples;
+    }
+
+    public void setExamples(List<String> examples) {
+        this.examples = examples;
+    }
+
+    public List<String> getSynonyms() {
+        return synonyms;
+    }
+
+    public void setSynonyms(List<String> synonyms) {
+        this.synonyms = synonyms;
+    }
+
+    public List<String> getAntonyms() {
+        return antonyms;
+    }
+
+    public void setAntonyms(List<String> antonyms) {
+        this.antonyms = antonyms;
+    }
+
+    public String getGrammarNote() {
+        return grammarNote;
+    }
+
+    public void setGrammarNote(String grammarNote) {
+        this.grammarNote = grammarNote;
     }
 }

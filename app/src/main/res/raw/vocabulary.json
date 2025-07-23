@@ -1,654 +1,1015 @@
 [
     {
         "englishWord": "abandon",
-        "phonetic": "/əˈbændən/",
+        "phoneticUK": "/əˈbændən/",
+        "phoneticUS": "/əˈbændən/",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "từ bỏ",
-        "example": "He abandoned his old habits."
+        "vietnameseMeanings": ["từ bỏ", "bỏ rơi"],
+        "examples": ["He abandoned his old habits.", "She had to abandon the project."],
+        "synonyms": ["leave", "desert", "forsake"],
+        "antonyms": ["keep", "continue", "maintain"],
+        "grammarNote": ""
     },
     {
         "englishWord": "abode",
-        "phonetic": "/əˈboʊd/",
+        "phoneticUK": "/əˈboʊd/",
+        "phoneticUS": "/əˈboʊd/",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "nơi ở",
-        "example": "This is my humble abode."
+        "vietnameseMeanings": ["nơi ở", "chỗ cư trú"],
+        "examples": ["This is my humble abode."],
+        "synonyms": ["home", "residence", "dwelling"],
+        "antonyms": ["office", "workplace"],
+        "grammarNote": ""
     },
     {
         "englishWord": "abort",
-        "phonetic": "/əˈbɔːrt/",
+        "phoneticUK": "/əˈbɔːrt/",
+        "phoneticUS": "/əˈbɔːrt/",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "phá thai",
-        "example": "The mission was aborted."
+        "vietnameseMeanings": ["phá thai", "hủy bỏ"],
+        "examples": ["The mission was aborted.", "They decided to abort the launch."],
+        "synonyms": ["terminate", "cancel", "halt"],
+        "antonyms": ["continue", "proceed"],
+        "grammarNote": ""
     },
     {
         "englishWord": "abortion",
-        "phonetic": "/əˈbɔːrʃn/",
+        "phoneticUK": "/əˈbɔːrʃn/",
+        "phoneticUS": "/əˈbɔːrʃn/",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự phá thai",
-        "example": "Abortion is a sensitive topic."
+        "vietnameseMeanings": ["sự phá thai"],
+        "examples": ["Abortion is a sensitive topic."],
+        "synonyms": ["termination", "miscarriage"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "abroad",
-        "phonetic": "/əˈbrɔːd/",
+        "phoneticUK": "/əˈbrɔːd/",
+        "phoneticUS": "/əˈbrɔːd/",
         "partOfSpeech": "Adverb",
-        "vietnameseMeaning": "ở nước ngoài",
-        "example": "She studied abroad last year."
+        "vietnameseMeanings": ["ở nước ngoài"],
+        "examples": ["She studied abroad last year."],
+        "synonyms": ["overseas", "internationally"],
+        "antonyms": ["domestically", "locally"],
+        "grammarNote": ""
     },
     {
         "englishWord": "absent",
-        "phonetic": "/ˈæbsənt/",
+        "phoneticUK": "/ˈæbsənt/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "vắng mặt",
-        "example": "He was absent from class."
+        "vietnameseMeanings": ["vắng mặt", "thiếu"],
+        "examples": ["He was absent from class."],
+        "synonyms": ["missing", "away", "not present"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "abstraction",
-        "phonetic": "/æbˈstrækʃn/",
+        "phoneticUK": "/æbˈstrækʃn/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự trừu tượng",
-        "example": "Abstraction is common in art."
+        "vietnameseMeanings": ["sự trừu tượng", "khái niệm trừu tượng"],
+        "examples": ["Abstraction is common in art."],
+        "synonyms": ["concept", "idea"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "absurd",
-        "phonetic": "/əbˈsɜːrd/",
+        "phoneticUK": "/əbˈsɜːrd/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "vô lý",
-        "example": "His argument was absurd."
+        "vietnameseMeanings": ["vô lý", "nực cười"],
+        "examples": ["His argument was absurd."],
+        "synonyms": ["ridiculous", "illogical", "nonsensical"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "abuse",
-        "phonetic": "/əˈbjuːs/",
+        "phoneticUK": "/əˈbjuːs/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự lạm dụng",
-        "example": "Abuse of power is dangerous."
+        "vietnameseMeanings": ["sự lạm dụng"],
+        "examples": ["Abuse of power is dangerous."],
+        "synonyms": ["misuse", "exploitation"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "academic",
-        "phonetic": "/ˌækəˈdemɪk/",
+        "phoneticUK": "/ˌækəˈdemɪk/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "thuộc học viện",
-        "example": "She excels in academic studies."
+        "vietnameseMeanings": ["thuộc học viện"],
+        "examples": ["She excels in academic studies."],
+        "synonyms": ["scholarly", "educational"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "academy",
-        "phonetic": "/əˈkædəmi/",
+        "phoneticUK": "/əˈkædəmi/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "học viện",
-        "example": "He joined a military academy."
+        "vietnameseMeanings": ["học viện"],
+        "examples": ["He joined a military academy."],
+        "synonyms": ["institute", "school"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "access",
-        "phonetic": "/ˈækses/",
+        "phoneticUK": "/ˈækses/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "lối vào",
-        "example": "The building has easy access."
+        "vietnameseMeanings": ["lối vào", "quyền truy cập"],
+        "examples": ["The building has easy access."],
+        "synonyms": ["entry", "admission"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "accomplish",
-        "phonetic": "/əˈkɑːmplɪʃ/",
+        "phoneticUK": "/əˈkɑːmplɪʃ/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "hoàn thành",
-        "example": "She accomplished her goals."
+        "vietnameseMeanings": ["hoàn thành"],
+        "examples": ["She accomplished her goals."],
+        "synonyms": ["achieve", "complete", "fulfill"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "accord",
-        "phonetic": "/əˈkɔːrd/",
+        "phoneticUK": "/əˈkɔːrd/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự hòa hợp",
-        "example": "They reached an accord."
+        "vietnameseMeanings": ["sự hòa hợp", "hiệp định"],
+        "examples": ["They reached an accord."],
+        "synonyms": ["agreement", "treaty", "harmony"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "active",
-        "phonetic": "/ˈæktɪv/",
+        "phoneticUK": "/ˈæktɪv/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "tích cực",
-        "example": "He is an active member."
+        "vietnameseMeanings": ["tích cực", "năng động"],
+        "examples": ["He is an active member."],
+        "synonyms": ["energetic", "involved", "lively"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "activity",
-        "phonetic": "/ækˈtɪvəti/",
+        "phoneticUK": "/ækˈtɪvəti/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "hoạt động",
-        "example": "Sports are fun activities."
+        "vietnameseMeanings": ["hoạt động"],
+        "examples": ["Sports are fun activities."],
+        "synonyms": ["action", "event", "task"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adamant",
-        "phonetic": "/ˈædəmənt/",
+        "phoneticUK": "/ˈædəmənt/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "kiên cường",
-        "example": "She was adamant about her decision."
+        "vietnameseMeanings": ["kiên cường", "cứng rắn"],
+        "examples": ["She was adamant about her decision."],
+        "synonyms": ["firm", "unyielding", "determined"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "add",
-        "phonetic": "/æd/",
+        "phoneticUK": "/æd/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "thêm vào",
-        "example": "Add sugar to the recipe."
+        "vietnameseMeanings": ["thêm vào"],
+        "examples": ["Add sugar to the recipe."],
+        "synonyms": ["include", "attach", "insert"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "address",
-        "phonetic": "/əˈdres/",
+        "phoneticUK": "/əˈdres/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "địa chỉ",
-        "example": "What's your address?"
+        "vietnameseMeanings": ["địa chỉ"],
+        "examples": ["What's your address?"],
+        "synonyms": ["location", "residence"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adequate",
-        "phonetic": "/ˈædɪkwət/",
+        "phoneticUK": "/ˈædɪkwət/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "đầy đủ",
-        "example": "The supplies are adequate."
+        "vietnameseMeanings": ["đầy đủ", "tương xứng"],
+        "examples": ["The supplies are adequate."],
+        "synonyms": ["sufficient", "enough", "acceptable"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adjust",
-        "phonetic": "/əˈdʒʌst/",
+        "phoneticUK": "/əˈdʒʌst/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "điều chỉnh",
-        "example": "Adjust the volume."
+        "vietnameseMeanings": ["điều chỉnh"],
+        "examples": ["Adjust the volume."],
+        "synonyms": ["modify", "regulate", "tune"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "administration",
-        "phonetic": "/ədˌmɪnɪˈstreɪʃn/",
+        "phoneticUK": "/ədˌmɪnɪˈstreɪʃn/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự quản lý",
-        "example": "The administration made new rules."
+        "vietnameseMeanings": ["sự quản lý", "ban quản trị"],
+        "examples": ["The administration made new rules."],
+        "synonyms": ["management", "government", "leadership"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "admit",
-        "phonetic": "/ədˈmɪt/",
+        "phoneticUK": "/ədˈmɪt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "thừa nhận",
-        "example": "He admitted his mistake."
+        "vietnameseMeanings": ["thừa nhận"],
+        "examples": ["He admitted his mistake."],
+        "synonyms": ["confess", "acknowledge", "concede"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adopt",
-        "phonetic": "/əˈdɑːpt/",
+        "phoneticUK": "/əˈdɑːpt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "nhận làm con nuôi",
-        "example": "They adopted a child."
+        "vietnameseMeanings": ["nhận làm con nuôi", "áp dụng"],
+        "examples": ["They adopted a child."],
+        "synonyms": ["take in", "embrace"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adore",
-        "phonetic": "/əˈdɔːr/",
+        "phoneticUK": "/əˈdɔːr/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "ngưỡng vọng",
-        "example": "She adores her cat."
+        "vietnameseMeanings": ["ngưỡng vọng", "yêu mến"],
+        "examples": ["She adores her cat."],
+        "synonyms": ["love", "worship", "admire"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adroit",
-        "phonetic": "/əˈdrɔɪt/",
+        "phoneticUK": "/əˈdrɔɪt/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "khéo léo",
-        "example": "He is an adroit speaker."
+        "vietnameseMeanings": ["khéo léo"],
+        "examples": ["He is an adroit speaker."],
+        "synonyms": ["skillful", "clever", "dexterous"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adult",
-        "phonetic": "/ˈædʌlt/",
+        "phoneticUK": "/ˈædʌlt/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "người lớn",
-        "example": "This movie is for adults only."
+        "vietnameseMeanings": ["người lớn"],
+        "examples": ["This movie is for adults only."],
+        "synonyms": ["grown-up", "mature person"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "adversity",
-        "phonetic": "/ədˈvɜːrsəti/",
+        "phoneticUK": "/ədˈvɜːrsəti/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "nghịch cảnh",
-        "example": "She faced adversity bravely."
+        "vietnameseMeanings": ["nghịch cảnh"],
+        "examples": ["She faced adversity bravely."],
+        "synonyms": ["hardship", "misfortune", "difficulty"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "affect",
-        "phonetic": "/əˈfekt/",
+        "phoneticUK": "/əˈfekt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "ảnh hưởng",
-        "example": "The weather affects my mood."
+        "vietnameseMeanings": ["ảnh hưởng"],
+        "examples": ["The weather affects my mood."],
+        "synonyms": ["influence", "impact", "alter"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "affection",
-        "phonetic": "/əˈfekʃn/",
+        "phoneticUK": "/əˈfekʃn/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự yêu mến",
-        "example": "She showed affection to her dog."
+        "vietnameseMeanings": ["sự yêu mến"],
+        "examples": ["She showed affection to her dog."],
+        "synonyms": ["fondness", "love", "tenderness"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "affectionate",
-        "phonetic": "/əˈfekʃənət/",
+        "phoneticUK": "/əˈfekʃənət/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "thương yêu",
-        "example": "He is very affectionate."
+        "vietnameseMeanings": ["thương yêu", "trìu mến"],
+        "examples": ["He is very affectionate."],
+        "synonyms": ["loving", "caring", "warm"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "afford",
-        "phonetic": "/əˈfɔːrd/",
+        "phoneticUK": "/əˈfɔːrd/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "kính yêu",
-        "example": "I can afford this car."
+        "vietnameseMeanings": ["có đủ khả năng (mua/chi trả)"],
+        "examples": ["I can afford this car."],
+        "synonyms": ["pay for", "manage", "bear the cost of"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "agency",
-        "phonetic": "/ˈeɪdʒənsi/",
+        "phoneticUK": "/ˈeɪdʒənsi/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "tác dụng",
-        "example": "The agency handles bookings."
+        "vietnameseMeanings": ["cơ quan", "tổ chức"],
+        "examples": ["The agency handles bookings."],
+        "synonyms": ["organization", "firm", "office"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "agenda",
-        "phonetic": "/əˈdʒendə/",
+        "phoneticUK": "/əˈdʒendə/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "những việc phải làm",
-        "example": "What's on the agenda today?"
+        "vietnameseMeanings": ["những việc phải làm", "chương trình nghị sự"],
+        "examples": ["What's on the agenda today?"],
+        "synonyms": ["schedule", "plan", "program"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "aggressive",
-        "phonetic": "/əˈɡresɪv/",
+        "phoneticUK": "/əˈɡresɪv/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "hung hãn",
-        "example": "He has an aggressive attitude."
+        "vietnameseMeanings": ["hung hãn", "hiếu chiến"],
+        "examples": ["He has an aggressive attitude."],
+        "synonyms": ["hostile", "forceful", "assertive"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "agility",
-        "phonetic": "/əˈdʒɪləti/",
+        "phoneticUK": "/əˈdʒɪləti/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự nhanh nhẹn",
-        "example": "Her agility impressed everyone."
+        "vietnameseMeanings": ["sự nhanh nhẹn"],
+        "examples": ["Her agility impressed everyone."],
+        "synonyms": ["nimbleness", "speed", "dexterity"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "agitate",
-        "phonetic": "/ˈædʒɪteɪt/",
+        "phoneticUK": "/ˈædʒɪteɪt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "kích động",
-        "example": "The speech agitated the crowd."
+        "vietnameseMeanings": ["kích động", "khuấy động"],
+        "examples": ["The speech agitated the crowd."],
+        "synonyms": ["provoke", "stir up", "disturb"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "agree",
-        "phonetic": "/əˈɡriː/",
+        "phoneticUK": "/əˈɡriː/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "đồng ý",
-        "example": "I agree with your plan."
-    },
-    {
-        "englishWord": "agreement",
-        "phonetic": "/əˈɡriːmənt/",
-        "partOfSpeech": "Noun",
-        "vietnameseMeaning": "hiệp định",
-        "example": "They signed an agreement."
+        "vietnameseMeanings": ["đồng ý"],
+        "examples": ["I agree with your plan."],
+        "synonyms": ["consent", "approve", "concur"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "aid",
-        "phonetic": "/eɪd/",
+        "phoneticUK": "/eɪd/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự giúp đỡ",
-        "example": "She offered aid to the poor."
+        "vietnameseMeanings": ["sự giúp đỡ", "viện trợ"],
+        "examples": ["She offered aid to the poor."],
+        "synonyms": ["assistance", "help", "support"],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "air",
-        "phonetic": "/er/",
+        "phoneticUK": "/er/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "không khí",
-        "example": "The air is fresh today."
+        "vietnameseMeanings": ["không khí"],
+        "examples": ["The air is fresh today."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "aisle",
-        "phonetic": "/aɪl/",
+        "phoneticUK": "/aɪl/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "lối đi",
-        "example": "The aisle was narrow."
+        "vietnameseMeanings": ["lối đi"],
+        "examples": ["The aisle was narrow."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "alarm",
-        "phonetic": "/əˈlɑːrm/",
+        "phoneticUK": "/əˈlɑːrm/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự báo động",
-        "example": "The alarm woke me up."
+        "vietnameseMeanings": ["sự báo động"],
+        "examples": ["The alarm woke me up."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "amaze",
-        "phonetic": "/əˈmeɪz/",
+        "phoneticUK": "/əˈmeɪz/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "làm kinh ngạc",
-        "example": "Her talent amazed everyone."
+        "vietnameseMeanings": ["làm kinh ngạc"],
+        "examples": ["Her talent amazed everyone."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ambassador",
-        "phonetic": "/æmˈbæsədər/",
+        "phoneticUK": "/æmˈbæsədər/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "đại sứ",
-        "example": "He is an ambassador to France."
+        "vietnameseMeanings": ["đại sứ"],
+        "examples": ["He is an ambassador to France."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ambience",
-        "phonetic": "/ˈæmbiəns/",
+        "phoneticUK": "/ˈæmbiəns/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "môi trường",
-        "example": "The restaurant has a cozy ambience."
+        "vietnameseMeanings": ["môi trường"],
+        "examples": ["The restaurant has a cozy ambience."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ambition",
-        "phonetic": "/æmˈbɪʃn/",
+        "phoneticUK": "/æmˈbɪʃn/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "tham vọng",
-        "example": "Her ambition is to be a doctor."
+        "vietnameseMeanings": ["tham vọng"],
+        "examples": ["Her ambition is to be a doctor."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ambitious",
-        "phonetic": "/æmˈbɪʃəs/",
+        "phoneticUK": "/æmˈbɪʃəs/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "có nhiều khát vọng",
-        "example": "She is very ambitious."
+        "vietnameseMeanings": ["có nhiều khát vọng"],
+        "examples": ["She is very ambitious."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ambulance",
-        "phonetic": "/ˈæmbjələns/",
+        "phoneticUK": "/ˈæmbjələns/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "xe cứu thương",
-        "example": "The ambulance arrived quickly."
+        "vietnameseMeanings": ["xe cứu thương"],
+        "examples": ["The ambulance arrived quickly."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "amiable",
-        "phonetic": "/ˈeɪmiəbl/",
+        "phoneticUK": "/ˈeɪmiəbl/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "đáng mến",
-        "example": "He is an amiable person."
+        "vietnameseMeanings": ["đáng mến"],
+        "examples": ["He is an amiable person."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "amicable",
-        "phonetic": "/ˈæmɪkəbl/",
+        "phoneticUK": "/ˈæmɪkəbl/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "thân ái",
-        "example": "They reached an amicable agreement."
+        "vietnameseMeanings": ["thân ái"],
+        "examples": ["They reached an amicable agreement."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "amount",
-        "phonetic": "/əˈmaʊnt/",
+        "phoneticUK": "/əˈmaʊnt/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "số lượng",
-        "example": "A large amount of work remains."
+        "vietnameseMeanings": ["số lượng"],
+        "examples": ["A large amount of work remains."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ample",
-        "phonetic": "/ˈæmpl/",
+        "phoneticUK": "/ˈæmpl/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "phong phú",
-        "example": "There is ample food for everyone."
+        "vietnameseMeanings": ["phong phú"],
+        "examples": ["There is ample food for everyone."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "amusing",
-        "phonetic": "/əˈmjuːzɪŋ/",
+        "phoneticUK": "/əˈmjuːzɪŋ/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "có tính giải trí",
-        "example": "The movie was very amusing."
+        "vietnameseMeanings": ["có tính giải trí"],
+        "examples": ["The movie was very amusing."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "angelic",
-        "phonetic": "/ænˈdʒelɪk/",
+        "phoneticUK": "/ænˈdʒelɪk/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "tốt bụng",
-        "example": "She has an angelic smile."
+        "vietnameseMeanings": ["tốt bụng"],
+        "examples": ["She has an angelic smile."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "angry",
-        "phonetic": "/ˈæŋɡri/",
+        "phoneticUK": "/ˈæŋɡri/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "tức giận",
-        "example": "He was angry about the delay."
+        "vietnameseMeanings": ["tức giận"],
+        "examples": ["He was angry about the delay."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "anguish",
-        "phonetic": "/ˈæŋɡwɪʃ/",
+        "phoneticUK": "/ˈæŋɡwɪʃ/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "nỗi đau đớn",
-        "example": "She felt anguish over the loss."
+        "vietnameseMeanings": ["nỗi đau đớn"],
+        "examples": ["She felt anguish over the loss."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "anniversary",
-        "phonetic": "/ˌænɪˈvɜːrsəri/",
+        "phoneticUK": "/ˌænɪˈvɜːrsəri/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "ngày kỷ niệm",
-        "example": "They celebrated their anniversary."
+        "vietnameseMeanings": ["ngày kỷ niệm"],
+        "examples": ["They celebrated their anniversary."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "annoy",
-        "phonetic": "/əˈnɔɪ/",
+        "phoneticUK": "/əˈnɔɪ/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "quấy rầy",
-        "example": "His noise annoyed me."
+        "vietnameseMeanings": ["quấy rầy"],
+        "examples": ["His noise annoyed me."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "annual",
-        "phonetic": "/ˈænjuəl/",
+        "phoneticUK": "/ˈænjuəl/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "hàng năm",
-        "example": "The annual meeting is next week."
+        "vietnameseMeanings": ["hàng năm"],
+        "examples": ["The annual meeting is next week."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "anonymous",
-        "phonetic": "/əˈnɑːnɪməs/",
+        "phoneticUK": "/əˈnɑːnɪməs/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "ẩn danh",
-        "example": "The donation was anonymous."
+        "vietnameseMeanings": ["ẩn danh"],
+        "examples": ["The donation was anonymous."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "answer",
-        "phonetic": "/ˈænsər/",
+        "phoneticUK": "/ˈænsər/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "trả lời",
-        "example": "Please answer the question."
+        "vietnameseMeanings": ["trả lời"],
+        "examples": ["Please answer the question."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "antiquated",
-        "phonetic": "/ˈæntɪkweɪtɪd/",
+        "phoneticUK": "/ˈæntɪkweɪtɪd/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "cổ xưa",
-        "example": "The machine is antiquated."
+        "vietnameseMeanings": ["cổ xưa"],
+        "examples": ["The machine is antiquated."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "antique",
-        "phonetic": "/ænˈtiːk/",
+        "phoneticUK": "/ænˈtiːk/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "cổ",
-        "example": "She collects antique furniture."
+        "vietnameseMeanings": ["cổ"],
+        "examples": ["She collects antique furniture."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "anxiety",
-        "phonetic": "/æŋˈzaɪəti/",
+        "phoneticUK": "/æŋˈzaɪəti/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự lo lắng",
-        "example": "He felt anxiety before the exam."
+        "vietnameseMeanings": ["sự lo lắng"],
+        "examples": ["He felt anxiety before the exam."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "anxious",
-        "phonetic": "/ˈæŋkʃəs/",
+        "phoneticUK": "/ˈæŋkʃəs/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "lo âu",
-        "example": "She was anxious about the results."
+        "vietnameseMeanings": ["lo âu"],
+        "examples": ["She was anxious about the results."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "anyhow",
-        "phonetic": "/ˈenihaʊ/",
+        "phoneticUK": "/ˈenihaʊ/",
+        "phoneticUS": "",
         "partOfSpeech": "Adverb",
-        "vietnameseMeaning": "thế nào cũng được",
-        "example": "Anyhow, let's move on."
+        "vietnameseMeanings": ["thế nào cũng được"],
+        "examples": ["Anyhow, let's move on."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "apart",
-        "phonetic": "/əˈpɑːrt/",
+        "phoneticUK": "/əˈpɑːrt/",
+        "phoneticUS": "",
         "partOfSpeech": "Adverb",
-        "vietnameseMeaning": "riêng ra",
-        "example": "They live apart from each other."
+        "vietnameseMeanings": ["riêng ra"],
+        "examples": ["They live apart from each other."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "appeal",
-        "phonetic": "/əˈpiːl/",
+        "phoneticUK": "/əˈpiːl/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự kêu gọi",
-        "example": "The charity made an appeal."
+        "vietnameseMeanings": ["sự kêu gọi"],
+        "examples": ["The charity made an appeal."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "appetite",
-        "phonetic": "/ˈæpɪtaɪt/",
+        "phoneticUK": "/ˈæpɪtaɪt/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự ngon miệng",
-        "example": "She has a big appetite."
+        "vietnameseMeanings": ["sự ngon miệng"],
+        "examples": ["She has a big appetite."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "apply",
-        "phonetic": "/əˈplaɪ/",
+        "phoneticUK": "/əˈplaɪ/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "áp dụng",
-        "example": "Apply the rules strictly."
+        "vietnameseMeanings": ["áp dụng"],
+        "examples": ["Apply the rules strictly."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "appointment",
-        "phonetic": "/əˈpɔɪntmənt/",
+        "phoneticUK": "/əˈpɔɪntmənt/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "sự bổ nhiệm",
-        "example": "He got a new appointment."
+        "vietnameseMeanings": ["sự bổ nhiệm"],
+        "examples": ["He got a new appointment."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "ask",
-        "phonetic": "/æsk/",
+        "phoneticUK": "/æsk/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "hỏi",
-        "example": "Ask her about the project."
+        "vietnameseMeanings": ["hỏi"],
+        "examples": ["Ask her about the project."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "aspirin",
-        "phonetic": "/ˈæspɪrɪn/",
+        "phoneticUK": "/ˈæspɪrɪn/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "aspirin",
-        "example": "Take an aspirin for the headache."
+        "vietnameseMeanings": ["aspirin"],
+        "examples": ["Take an aspirin for the headache."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "aspiring",
-        "phonetic": "/əˈspaɪrɪŋ/",
+        "phoneticUK": "/əˈspaɪrɪŋ/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "khao khát",
-        "example": "She is an aspiring artist."
+        "vietnameseMeanings": ["khao khát"],
+        "examples": ["She is an aspiring artist."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assault",
-        "phonetic": "/əˈsɔːlt/",
+        "phoneticUK": "/əˈsɔːlt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "tấn công",
-        "example": "The army assaulted the fortress."
+        "vietnameseMeanings": ["tấn công"],
+        "examples": ["The army assaulted the fortress."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assembly",
-        "phonetic": "/əˈsembli/",
+        "phoneticUK": "/əˈsembli/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "cuộc họp",
-        "example": "The assembly discussed new policies."
+        "vietnameseMeanings": ["cuộc họp"],
+        "examples": ["The assembly discussed new policies."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assertive",
-        "phonetic": "/əˈsɜːrtɪv/",
+        "phoneticUK": "/əˈsɜːrtɪv/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "quả quyết",
-        "example": "She is assertive in meetings."
+        "vietnameseMeanings": ["quả quyết"],
+        "examples": ["She is assertive in meetings."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assess",
-        "phonetic": "/əˈses/",
+        "phoneticUK": "/əˈses/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "đánh giá",
-        "example": "We need to assess the situation."
+        "vietnameseMeanings": ["đánh giá"],
+        "examples": ["We need to assess the situation."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "asset",
-        "phonetic": "/ˈæset/",
+        "phoneticUK": "/ˈæset/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "tài sản",
-        "example": "Her skills are a great asset."
+        "vietnameseMeanings": ["tài sản"],
+        "examples": ["Her skills are a great asset."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assist",
-        "phonetic": "/əˈsɪst/",
+        "phoneticUK": "/əˈsɪst/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "giúp đỡ",
-        "example": "He assisted with the project."
+        "vietnameseMeanings": ["giúp đỡ"],
+        "examples": ["He assisted with the project."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "associate",
-        "phonetic": "/əˈsoʊʃieɪt/",
+        "phoneticUK": "/əˈsoʊʃieɪt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "kết giao",
-        "example": "She associates with kind people."
+        "vietnameseMeanings": ["kết giao"],
+        "examples": ["She associates with kind people."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assume",
-        "phonetic": "/əˈsuːm/",
+        "phoneticUK": "/əˈsuːm/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "giả sử",
-        "example": "Don't assume anything."
+        "vietnameseMeanings": ["giả sử"],
+        "examples": ["Don't assume anything."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "assure",
-        "phonetic": "/əˈʃʊr/",
+        "phoneticUK": "/əˈʃʊr/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "quả quyết",
-        "example": "I assure you it's safe."
+        "vietnameseMeanings": ["quả quyết"],
+        "examples": ["I assure you it's safe."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "astonishing",
-        "phonetic": "/əˈstɑːnɪʃɪŋ/",
+        "phoneticUK": "/əˈstɑːnɪʃɪŋ/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "gây bất ngờ",
-        "example": "Her performance was astonishing."
+        "vietnameseMeanings": ["gây bất ngờ"],
+        "examples": ["Her performance was astonishing."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "atrocious",
-        "phonetic": "/əˈtroʊʃəs/",
+        "phoneticUK": "/əˈtroʊʃəs/",
+        "phoneticUS": "",
         "partOfSpeech": "Adjective",
-        "vietnameseMeaning": "tàn ác",
-        "example": "The crime was atrocious."
+        "vietnameseMeanings": ["tàn ác"],
+        "examples": ["The crime was atrocious."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attack",
-        "phonetic": "/əˈtæk/",
+        "phoneticUK": "/əˈtæk/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "tấn công",
-        "example": "They attacked the enemy."
+        "vietnameseMeanings": ["tấn công"],
+        "examples": ["They attacked the enemy."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attempt",
-        "phonetic": "/əˈtempt/",
+        "phoneticUK": "/əˈtempt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "cố gắng",
-        "example": "She attempted to climb the mountain."
+        "vietnameseMeanings": ["cố gắng"],
+        "examples": ["She attempted to climb the mountain."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attend",
-        "phonetic": "/əˈtend/",
+        "phoneticUK": "/əˈtend/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "có mặt",
-        "example": "I will attend the meeting."
+        "vietnameseMeanings": ["có mặt"],
+        "examples": ["I will attend the meeting."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attire",
-        "phonetic": "/əˈtaɪər/",
+        "phoneticUK": "/əˈtaɪər/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "quần áo",
-        "example": "Her attire was elegant."
+        "vietnameseMeanings": ["quần áo"],
+        "examples": ["Her attire was elegant."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attitude",
-        "phonetic": "/ˈætɪtuːd/",
+        "phoneticUK": "/ˈætɪtuːd/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "thái độ",
-        "example": "He has a positive attitude."
+        "vietnameseMeanings": ["thái độ"],
+        "examples": ["He has a positive attitude."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attorney",
-        "phonetic": "/əˈtɜːrni/",
+        "phoneticUK": "/əˈtɜːrni/",
+        "phoneticUS": "",
         "partOfSpeech": "Noun",
-        "vietnameseMeaning": "người được ủy quyền",
-        "example": "She hired an attorney."
+        "vietnameseMeanings": ["người được ủy quyền"],
+        "examples": ["She hired an attorney."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attract",
-        "phonetic": "/əˈtrækt/",
+        "phoneticUK": "/əˈtrækt/",
+        "phoneticUS": "",
         "partOfSpeech": "Verb",
-        "vietnameseMeaning": "thu hút",
-        "example": "The event attracted many people."
+        "vietnameseMeanings": ["thu hút"],
+        "examples": ["The event attracted many people."],
+        "synonyms": [],
+        "antonyms": [],
+        "grammarNote": ""
     },
     {
         "englishWord": "attractive",

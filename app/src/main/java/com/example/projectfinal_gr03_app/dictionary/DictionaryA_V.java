@@ -45,9 +45,6 @@ public class DictionaryA_V extends AppCompatActivity {
 
         // Khởi tạo danh sách từ vựng mẫu
 
-        wordList.add(new Vocabulary_Dic("Hello", "/həˈloʊ/", "Noun", "Xin chào", "Hello, how are you?"));
-        wordList.add(new Vocabulary_Dic("Book", "/bʊk/", "Noun", "Sách", "I read a book."));
-        wordList.add(new Vocabulary_Dic("Run", "/rʌn/", "Verb", "Chạy", "She runs every morning."));
 
         // Khởi tạo và thiết lập Adapter
         adapter = new VocabularyAdapter(wordList);
@@ -89,18 +86,68 @@ public class DictionaryA_V extends AppCompatActivity {
             JSONArray jsonArray = new JSONArray(jsonString.toString());
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
-                vocabularyList.add(new Vocabulary_Dic(
-                        obj.optString("englishWord", ""),
-                        obj.optString("phonetic", "N/A"),
-                        obj.optString("partOfSpeech", "Unknown"),
-                        obj.optString("vietnameseMeaning", ""),
-                        obj.optString("example", "N/A")
-                ));
+
+                String englishWord = obj.optString("englishWord", "");
+                String phoneticUK = obj.optString("phoneticUK", "");
+                String phoneticUS = obj.optString("phoneticUS", "");
+                String partOfSpeech = obj.optString("partOfSpeech", "");
+                String grammarNote = obj.optString("grammarNote", "");
+
+                // Parse List<String> từ JSONArray
+                List<String> meanings = new ArrayList<>();
+                JSONArray meaningsArray = obj.optJSONArray("vietnameseMeanings");
+                if (meaningsArray != null) {
+                    for (int j = 0; j < meaningsArray.length(); j++) {
+                        meanings.add(meaningsArray.optString(j));
+                    }
+                }
+
+                List<String> examples = new ArrayList<>();
+                JSONArray examplesArray = obj.optJSONArray("examples");
+                if (examplesArray != null) {
+                    for (int j = 0; j < examplesArray.length(); j++) {
+                        examples.add(examplesArray.optString(j));
+                    }
+                }
+
+                List<String> synonyms = new ArrayList<>();
+                JSONArray synonymsArray = obj.optJSONArray("synonyms");
+                if (synonymsArray != null) {
+                    for (int j = 0; j < synonymsArray.length(); j++) {
+                        synonyms.add(synonymsArray.optString(j));
+                    }
+                }
+
+                List<String> antonyms = new ArrayList<>();
+                JSONArray antonymsArray = obj.optJSONArray("antonyms");
+                if (antonymsArray != null) {
+                    for (int j = 0; j < antonymsArray.length(); j++) {
+                        antonyms.add(antonymsArray.optString(j));
+                    }
+                }
+
+                // Tạo object và thêm vào danh sách
+                Vocabulary_Dic vocab = new Vocabulary_Dic(
+                        englishWord,
+                        phoneticUK,
+                        phoneticUS,
+                        partOfSpeech,
+                        meanings,
+                        examples,
+                        synonyms,
+                        antonyms,
+                        grammarNote
+                );
+
+                vocabularyList.add(vocab);
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return vocabularyList;
     }
+
 
 }
