@@ -1,6 +1,8 @@
 package com.example.projectfinal_gr03_app.dictionary;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.Editable;
 import android.text.TextWatcher;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,8 @@ public class DictionaryA_V extends AppCompatActivity {
     private EditText etSearch;
     private VocabularyAdapter adapter;
     private List<Vocabulary_Dic> wordList;
+    private final Handler searchHandler = new Handler(Looper.getMainLooper());
+    private Runnable searchRunnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +54,20 @@ public class DictionaryA_V extends AppCompatActivity {
         rvVocabulary.setLayoutManager(new LinearLayoutManager(this));
         rvVocabulary.setAdapter(adapter);
 
-        // Lọc từ khi tìm kiếm
+        // Filter words on search
         etSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {adapter.filter(s.toString());}
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (adapter != null) {
+                    adapter.filter(s != null ? s.toString() : "");
+                }
+            }
 
             @Override
-            public void afterTextChanged(Editable s) {
-
-            }
+            public void afterTextChanged(Editable s) {}
         });
     }
 

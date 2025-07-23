@@ -18,7 +18,7 @@ public class VocabularyAdapter extends RecyclerView.Adapter<VocabularyAdapter.Wo
     private List<Vocabulary_Dic> filteredList;
 
     public VocabularyAdapter(List<Vocabulary_Dic> wordList) {
-        this.vocabularyList = vocabularyList;
+        this.vocabularyList = wordList;
         this.filteredList = new ArrayList<>(wordList);
     }
 
@@ -44,18 +44,22 @@ public class VocabularyAdapter extends RecyclerView.Adapter<VocabularyAdapter.Wo
         return filteredList.size();
     }
 
+
     public void filter(String text) {
         filteredList.clear();
+
         if (text == null || text.trim().isEmpty()) {
             filteredList.addAll(vocabularyList);
         } else {
-            text = text.toLowerCase().trim();
+            String searchText = text.toLowerCase().trim();
             for (Vocabulary_Dic vocab : vocabularyList) {
-                if (vocab.getEnglishWord() != null && vocab.getEnglishWord().toLowerCase().contains(text)) {
+                if (vocab != null && vocab.getEnglishWord() != null &&
+                        vocab.getEnglishWord().toLowerCase().contains(searchText)) {
                     filteredList.add(vocab);
                 }
             }
         }
+
         notifyDataSetChanged();
     }
 
