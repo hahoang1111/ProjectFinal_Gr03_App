@@ -38,4 +38,16 @@
         android:layout_weight="1"
         android:background="#E4EEF8"
         android:paddingBottom="8dp" />
+
+    <!-- Nút mở Flashcard -->
+    <Button
+        android:id="@+id/btnFlashcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎮 Ôn từ với Flashcard"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#90CAF9"
+        android:textColor="#0D47A1"
+        android:textStyle="bold" />
 </LinearLayout>
