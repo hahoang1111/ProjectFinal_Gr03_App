@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "An error occurred", Toast.LENGTH_SHORT).show();
             }
         });
+        cardMyWords.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, YourWordActivity.class)));
 
 
         // Xử lý tìm kiếm (tùy chọn, nếu cần)

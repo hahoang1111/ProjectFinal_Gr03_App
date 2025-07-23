@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm từ của bạn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtEnglishWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập từ tiếng Anh"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginBottom="8dp"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/edtVietnameseTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập bản dịch tiếng Việt"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginBottom="16dp"
+        android:inputType="textCapSentences"/>
+
+    <Button
+        android:id="@+id/btnSaveNewWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu từ mới"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Các từ đã lưu của bạn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvYourWords"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnClearYourWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa tất cả"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

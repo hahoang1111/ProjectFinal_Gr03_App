@@ -5,9 +5,10 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import android.content.Context;
 
-@Database(entities = {HistoryModel.class}, version = 1, exportSchema = false)
+@Database(entities = {HistoryModel.class, YourWordModel.class}, version = 2, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract HistoryDao historyDao();
+    public abstract YourWordDao yourWordDao();
 
     private static volatile AppDatabase INSTANCE;
 
