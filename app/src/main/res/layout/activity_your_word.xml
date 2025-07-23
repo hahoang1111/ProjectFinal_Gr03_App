@@ -51,7 +51,16 @@
         android:gravity="center"
         android:paddingBottom="16dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:id="@+id/tvEmptyListMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chưa có từ nào được lưu."
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" /> <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvYourWords"
         android:layout_width="match_parent"
         android:layout_height="0dp"

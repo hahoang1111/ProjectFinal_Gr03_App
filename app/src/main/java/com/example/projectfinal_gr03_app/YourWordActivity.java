@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText; // Import EditText
 import android.widget.Toast;
+import android.view.View;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,6 +28,8 @@ public class YourWordActivity extends AppCompatActivity {
     private EditText edtVietnameseTranslation;
     private Button btnSaveNewWord;
 
+    private TextView tvEmptyListMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +42,7 @@ public class YourWordActivity extends AppCompatActivity {
         edtEnglishWord = findViewById(R.id.edtEnglishWord);
         edtVietnameseTranslation = findViewById(R.id.edtVietnameseTranslation);
         btnSaveNewWord = findViewById(R.id.btnSaveNewWord);
-
+        tvEmptyListMessage = findViewById(R.id.tvEmptyListMessage);
 
         database = AppDatabase.getInstance(this);
         executorService = Executors.newSingleThreadExecutor();
@@ -80,6 +84,7 @@ public class YourWordActivity extends AppCompatActivity {
                 runOnUiThread(() -> {
                     yourWordList.clear();
                     yourWordAdapter.notifyDataSetChanged();
+                    updateUIBasedOnList();
                     Toast.makeText(YourWordActivity.this, "Đã xóa tất cả từ đã lưu", Toast.LENGTH_SHORT).show();
                 });
             });
@@ -93,8 +98,22 @@ public class YourWordActivity extends AppCompatActivity {
                 yourWordList.clear();
                 yourWordList.addAll(words);
                 yourWordAdapter.notifyDataSetChanged();
+                updateUIBasedOnList();
             });
         });
+    }
+
+    // Phương thức mới để cập nhật hiển thị UI dựa trên trạng thái danh sách
+    private void updateUIBasedOnList() {
+        if (yourWordList.isEmpty()) {
+            tvEmptyListMessage.setVisibility(View.VISIBLE); // Hiện thông báo
+            rvYourWords.setVisibility(View.GONE); // Ẩn RecyclerView
+            btnClearYourWords.setVisibility(View.GONE); // Ẩn nút xóa
+        } else {
+            tvEmptyListMessage.setVisibility(View.GONE); // Ẩn thông báo
+            rvYourWords.setVisibility(View.VISIBLE); // Hiện RecyclerView
+            btnClearYourWords.setVisibility(View.VISIBLE); // Hiện nút xóa
+        }
     }
 
     @Override
