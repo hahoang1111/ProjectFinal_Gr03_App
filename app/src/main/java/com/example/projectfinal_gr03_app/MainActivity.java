@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.projectfinal_gr03_app.dictionary.DictionaryA_V;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvAppTitle;

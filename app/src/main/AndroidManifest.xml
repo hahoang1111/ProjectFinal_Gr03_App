@@ -21,15 +21,15 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".TranslateActivity" />
-        <activity android:name=".DictionaryA_V" />
+        <activity android:name=".dictionary.DictionaryA_V" />
         <activity android:name=".QuizListActivity" />
         <activity android:name=".QuizResultActivity" />
         <activity android:name=".QuizHandleActivity" />
+        <activity android:name=".dictionary.VocabDetailActivity" />
+        <activity android:name=".dictionary.FlashcardActivity" />
     </application>
-
 </manifest>
