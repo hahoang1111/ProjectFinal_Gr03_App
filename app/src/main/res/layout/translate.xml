@@ -7,12 +7,13 @@
     android:background="#F3F4F6"
     android:padding="16dp">
 
+    <!-- Layout chính chứa toàn bộ nội dung -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Card dịch -->
+        <!-- Card dịch: chứa Spinner chọn ngôn ngữ, EditText nhập văn bản, nút dịch -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +28,7 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Spinner -->
+                <!-- Dòng chọn ngôn ngữ: spinner source + nút hoán đổi + spinner target -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -35,12 +36,14 @@
                     android:gravity="center_vertical"
                     android:layout_marginBottom="12dp">
 
+                    <!-- Spinner chọn ngôn ngữ nguồn -->
                     <Spinner
                         android:id="@+id/spinnerSource"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
+                    <!-- Nút hoán đổi ngôn ngữ -->
                     <Button
                         android:id="@+id/btnSwap"
                         android:layout_width="wrap_content"
@@ -50,6 +53,7 @@
                         android:backgroundTint="#2196F3"
                         android:textColor="@android:color/white" />
 
+                    <!-- Spinner chọn ngôn ngữ đích -->
                     <Spinner
                         android:id="@+id/spinnerTarget"
                         android:layout_width="0dp"
@@ -57,7 +61,7 @@
                         android:layout_weight="1" />
                 </LinearLayout>
 
-                <!-- Nhập văn bản -->
+                <!-- Ô nhập văn bản cần dịch -->
                 <EditText
                     android:id="@+id/edtInput"
                     android:layout_width="match_parent"
@@ -70,7 +74,7 @@
                     android:textSize="16sp"
                     android:inputType="textMultiLine" />
 
-                <!-- Nút dịch -->
+                <!-- Nút thực hiện dịch -->
                 <Button
                     android:id="@+id/btnTranslate"
                     android:layout_width="match_parent"
@@ -83,7 +87,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Card kết quả -->
+        <!-- Card kết quả dịch -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,6 +101,7 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
+                <!-- TextView hiển thị kết quả dịch -->
                 <TextView
                     android:id="@+id/txtResult"
                     android:layout_width="match_parent"
@@ -109,12 +114,14 @@
                     android:enabled="false"
                     android:textColor="#000000" />
 
+                <!-- Các nút xử lý kết quả: sao chép, đọc văn bản -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="end">
 
+                    <!-- Nút sao chép kết quả -->
                     <Button
                         android:id="@+id/btnCopy"
                         android:layout_width="wrap_content"
@@ -125,6 +132,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp" />
 
+                    <!-- Nút phát âm kết quả -->
                     <Button
                         android:id="@+id/btnSpeak"
                         android:layout_width="wrap_content"
@@ -133,14 +141,11 @@
                         android:backgroundTint="#FF9800"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="8dp" />
-
-
                 </LinearLayout>
-
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
 
+        <!-- Tiêu đề lịch sử dịch -->
         <TextView
             android:id="@+id/txtHistoryTitle"
             android:layout_width="match_parent"
@@ -152,13 +157,14 @@
             android:paddingBottom="8dp"
             android:textColor="#333333" />
 
-        <!-- RecyclerView hiển thị lịch sử -->
+        <!-- RecyclerView hiển thị lịch sử dịch (1) -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerHistory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:nestedScrollingEnabled="false" />
 
+        <!-- Nút xóa lịch sử dịch -->
         <Button
             android:id="@+id/btnClearHistory"
             android:layout_width="match_parent"
@@ -166,13 +172,14 @@
             android:text="Xóa lịch sử"
             android:layout_marginTop="8dp" />
 
+        <!-- RecyclerView hiển thị lịch sử dịch (2) - ID trùng -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerHistory"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="8dp"
             android:background="#F5F5F5"
-            tools:ignore="DuplicateIds" />
+            tools:ignore="DuplicateIds" /> <!-- ⚠️ ID bị trùng -->
 
     </LinearLayout>
 

@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Layout cho một mục trong RecyclerView hiển thị lịch sử dịch -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_margin="8dp"
     android:layout_height="wrap_content"
     android:elevation="4dp">
 
+    <!-- Bố cục dọc chứa 2 dòng văn bản -->
     <LinearLayout
         android:padding="12dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
+        <!-- Text hiển thị nội dung gốc -->
         <TextView
             android:id="@+id/txtOriginal"
             android:textStyle="bold"
             android:textColor="#000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
+        <!-- Text hiển thị nội dung đã dịch -->
         <TextView
             android:id="@+id/txtTranslated"
             android:textColor="#555"

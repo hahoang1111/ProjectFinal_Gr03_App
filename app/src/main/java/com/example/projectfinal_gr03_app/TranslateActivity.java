@@ -28,6 +28,7 @@ import java.util.concurrent.Executors;
 
 public class TranslateActivity extends AppCompatActivity {
 
+    // Các thành phần giao diện và biến cần thiết
     private Spinner spinnerSource, spinnerTarget;
     private EditText edtInput;
     private Button btnTranslate, btnSwap, btnSpeak, btnCopy, btnClearHistory;
@@ -39,8 +40,10 @@ public class TranslateActivity extends AppCompatActivity {
     private AppDatabase database;
     private ExecutorService executorService;
 
+    // Danh sách ngôn ngữ hiển thị cho Spinner
     private String[] languages = {"Việt", "Anh", "Nhật", "Hàn"};
 
+    // Phương thức chuyển tên ngôn ngữ sang mã ngôn ngữ chuẩn của ML Kit
     private String getLangCode(String lang) {
         switch (lang) {
             case "Việt": return TranslateLanguage.VIETNAMESE;
@@ -68,23 +71,23 @@ public class TranslateActivity extends AppCompatActivity {
         txtResult = findViewById(R.id.txtResult);
         recyclerHistory = findViewById(R.id.recyclerHistory);
 
-        // Khởi tạo database và executor
+        // Khởi tạo database và luồng thực thi riêng
         database = AppDatabase.getInstance(this);
         executorService = Executors.newSingleThreadExecutor();
 
-        // Cấu hình Spinner
+        // Cấu hình Spinner cho ngôn ngữ
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, languages);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerSource.setAdapter(adapter);
         spinnerTarget.setAdapter(adapter);
 
-        // Cấu hình RecyclerView
+        // Cấu hình RecyclerView để hiển thị lịch sử dịch
         historyList = new ArrayList<>();
         historyAdapter = new HistoryAdapter(historyList);
         recyclerHistory.setLayoutManager(new LinearLayoutManager(this));
         recyclerHistory.setAdapter(historyAdapter);
 
-        // Tải lịch sử từ database
+        // Tải dữ liệu lịch sử dịch từ database (Room)
         executorService.execute(() -> {
             List<HistoryModel> history = database.historyDao().getAllHistory();
             runOnUiThread(() -> {
@@ -94,14 +97,14 @@ public class TranslateActivity extends AppCompatActivity {
             });
         });
 
-        // Khởi tạo TextToSpeech
+        // Khởi tạo chức năng Text-to-Speech
         tts = new TextToSpeech(getApplicationContext(), status -> {
             if (status != TextToSpeech.ERROR) {
-                tts.setLanguage(Locale.US);
+                tts.setLanguage(Locale.US); // Đặt ngôn ngữ đọc là tiếng Anh
             }
         });
 
-        // Xử lý nút dịch
+        // Xử lý nút "Dịch"
         btnTranslate.setOnClickListener(v -> {
             String inputText = edtInput.getText().toString().trim();
             if (inputText.isEmpty()) {
@@ -117,6 +120,7 @@ public class TranslateActivity extends AppCompatActivity {
                 return;
             }
 
+            // Tạo đối tượng Translator với ngôn ngữ nguồn và đích
             TranslatorOptions options = new TranslatorOptions.Builder()
                     .setSourceLanguage(sourceLang)
                     .setTargetLanguage(targetLang)
@@ -125,11 +129,15 @@ public class TranslateActivity extends AppCompatActivity {
             Translator translator = Translation.getClient(options);
             txtResult.setText("Đang dịch...");
 
+            // Tải mô hình dịch nếu cần (chỉ khi chưa tải)
             translator.downloadModelIfNeeded(new DownloadConditions.Builder().requireWifi().build())
                     .addOnSuccessListener(unused -> {
                         translator.translate(inputText)
                                 .addOnSuccessListener(translatedText -> {
+                                    // Hiển thị kết quả dịch
                                     txtResult.setText(translatedText);
+
+                                    // Lưu vào lịch sử (Room DB)
                                     HistoryModel history = new HistoryModel(inputText, translatedText);
                                     executorService.execute(() -> {
                                         database.historyDao().insert(history);
@@ -138,7 +146,7 @@ public class TranslateActivity extends AppCompatActivity {
                                             historyList.clear();
                                             historyList.addAll(updatedHistory);
                                             historyAdapter.notifyDataSetChanged();
-                                            recyclerHistory.scrollToPosition(0);
+                                            recyclerHistory.scrollToPosition(0); // Cuộn lên đầu
                                         });
                                     });
                                 })
@@ -147,7 +155,7 @@ public class TranslateActivity extends AppCompatActivity {
                     .addOnFailureListener(e -> txtResult.setText("Không thể tải model: " + e.getMessage()));
         });
 
-        // Xử lý nút swap
+        // Xử lý nút "Hoán đổi ngôn ngữ"
         btnSwap.setOnClickListener(v -> {
             int src = spinnerSource.getSelectedItemPosition();
             int tgt = spinnerTarget.getSelectedItemPosition();
@@ -155,7 +163,7 @@ public class TranslateActivity extends AppCompatActivity {
             spinnerTarget.setSelection(src);
         });
 
-        // Xử lý nút phát âm
+        // Xử lý nút "Phát âm"
         btnSpeak.setOnClickListener(v -> {
             String text = txtResult.getText().toString();
             if (!text.isEmpty() && !text.equals("Đang dịch...")) {
@@ -163,7 +171,7 @@ public class TranslateActivity extends AppCompatActivity {
             }
         });
 
-        // Xử lý nút sao chép
+        // Xử lý nút "Sao chép"
         btnCopy.setOnClickListener(v -> {
             String translatedText = txtResult.getText().toString();
             if (!translatedText.isEmpty() && !translatedText.equals("Đang dịch...")) {
@@ -174,10 +182,10 @@ public class TranslateActivity extends AppCompatActivity {
             }
         });
 
-        // Xử lý nút xóa lịch sử
+        // Xử lý nút "Xóa lịch sử"
         btnClearHistory.setOnClickListener(v -> {
             executorService.execute(() -> {
-                database.historyDao().clearHistory();
+                database.historyDao().clearHistory(); // Xóa toàn bộ
                 runOnUiThread(() -> {
                     historyList.clear();
                     historyAdapter.notifyDataSetChanged();
@@ -186,13 +194,14 @@ public class TranslateActivity extends AppCompatActivity {
         });
     }
 
+    // Giải phóng tài nguyên khi Activity bị hủy
     @Override
     protected void onDestroy() {
         if (tts != null) {
             tts.stop();
             tts.shutdown();
         }
-        executorService.shutdown();
+        executorService.shutdown(); // Dừng Executor để tránh rò rỉ bộ nhớ
         super.onDestroy();
     }
 }

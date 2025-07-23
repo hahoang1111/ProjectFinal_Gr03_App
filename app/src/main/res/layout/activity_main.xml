@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,9 +8,7 @@
     android:background="@drawable/gradient_background"
     android:padding="16dp">
 
-
-
-
+    <!-- Tiêu đề ứng dụng -->
     <TextView
         android:layout_marginTop="20dp"
         android:id="@+id/tvAppTitle"
@@ -27,13 +26,14 @@
         android:shadowRadius="4"
         android:layout_marginBottom="16dp" />
 
-
+    <!-- Hình ảnh banner của ứng dụng -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="260dp"
         app:srcCompat="@drawable/hkt_english_new" />
 
+    <!-- Thanh tìm kiếm từ vựng -->
     <EditText
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
@@ -49,8 +49,7 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#B0FFFFFF" />
 
-
-    <!-- Scrollable Content -->
+    <!-- Khu vực cuộn chứa các chức năng chính -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -61,7 +60,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Translate Card -->
+            <!-- Thẻ chức năng: Dịch văn bản -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardTranslate"
                 android:layout_width="match_parent"
@@ -95,7 +94,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Dictionary Card -->
+            <!-- Thẻ chức năng: Từ điển Anh - Việt -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardDictionary"
                 android:layout_width="match_parent"
@@ -129,7 +128,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Quiz Card -->
+            <!-- Thẻ chức năng: Quiz từ vựng -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardQuiz"
                 android:layout_width="match_parent"
@@ -163,7 +162,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- My Words Card -->
+            <!-- Thẻ chức năng: Từ của bạn -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardMyWords"
                 android:layout_width="match_parent"

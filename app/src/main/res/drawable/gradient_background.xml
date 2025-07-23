@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient nền từ màu xanh đậm (#1A237E) sang xanh nhạt hơn (#3F51B5), góc 45 độ -->
     <gradient
         android:startColor="#1A237E"
         android:endColor="#3F51B5"
         android:angle="45" />
-
 </shape>

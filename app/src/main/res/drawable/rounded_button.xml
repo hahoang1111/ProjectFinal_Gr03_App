@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Trạng thái khi nhấn -->
+    <!-- Trạng thái khi nút được nhấn -->
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="#388E3C"/> <!-- Màu khi nhấn -->
-            <corners android:radius="16dp"/>
+            <solid android:color="#388E3C"/> <!-- Màu xanh đậm khi nhấn -->
+            <corners android:radius="16dp"/> <!-- Bo góc 16dp -->
         </shape>
     </item>
 
-    <!-- Trạng thái mặc định (khi không nhấn) -->
+    <!-- Trạng thái mặc định -->
     <item>
         <shape>
-            <solid android:color="#4CAF50"/> <!-- Màu mặc định -->
-            <corners android:radius="16dp"/>
+            <solid android:color="#4CAF50"/> <!-- Màu xanh mặc định -->
+            <corners android:radius="16dp"/> <!-- Bo góc 16dp -->
         </shape>
     </item>
 </selector>

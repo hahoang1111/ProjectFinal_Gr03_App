@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Nền màu xám đậm -->
     <solid android:color="#1E1E1E" />
+
+    <!-- Bo góc 25dp -->
     <corners android:radius="25dp" />
+
+    <!-- Viền 2dp màu xanh lá -->
     <stroke
         android:width="2dp"
         android:color="#4CAF50" />

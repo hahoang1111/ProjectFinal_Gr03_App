@@ -6,14 +6,16 @@ import androidx.room.Query;
 
 import java.util.List;
 
+// DAO quản lý thao tác với bảng translation_history
 @Dao
 public interface HistoryDao {
+
     @Insert
-    void insert(HistoryModel history);
+    void insert(HistoryModel history); // Thêm bản ghi mới
 
     @Query("SELECT * FROM translation_history ORDER BY id DESC")
-    List<HistoryModel> getAllHistory();
+    List<HistoryModel> getAllHistory(); // Lấy toàn bộ lịch sử (mới nhất trước)
 
     @Query("DELETE FROM translation_history")
-    void clearHistory();
+    void clearHistory(); // Xóa toàn bộ lịch sử
 }
