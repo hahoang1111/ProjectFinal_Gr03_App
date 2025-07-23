@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TranslateActivity" />
-        <activity android:name=".DictionaryA_V" />
+        <activity android:name=".dictionary.DictionaryA_V" />
         <activity android:name=".QuizListActivity" />
         <activity android:name=".QuizResultActivity" />
         <activity android:name=".QuizHandleActivity" />
